@@ -14,11 +14,6 @@ get '/primes' do
   erb :prime
 end
 
-get '/my-name-is/:name' do
-  name = params[:name]
-  "私の名前は#{name}です"
-end
-
-get '/hoge' do
-  'hoge hoge'
+get '/form' do
+  erb :form
 end
