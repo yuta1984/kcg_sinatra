@@ -17,3 +17,10 @@ end
 get '/form' do
   erb :form
 end
+
+post '/confirm' do
+  @name = params[:name]
+  @email = params[:email]
+  @content = params[:content]
+  erb :confirm
+end
